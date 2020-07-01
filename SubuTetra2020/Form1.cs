@@ -17,13 +17,5 @@ namespace SubuTetra2020
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            String [] ports = SerialPort.GetPortNames();
-            for(int i = 0; i < ports.Length; i++)
-            {
-                textBox1.Text += ports[i] + Environment.NewLine;
-            }
-        }
     } 
 }

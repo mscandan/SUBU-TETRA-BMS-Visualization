@@ -1,0 +1,12 @@
+﻿Program 0.25sn'de bir veri okuması yapacak []
+Anlık okunan değerlerin kaydedileceği bir log dosyası opsiyonu []
+	* verilerin kaydedileceği log dosyayı seçimi kullanıcıya bırakılacak []
+Genel ayarlar, veri görüntüleme farklı sayfalarda olmalı []
+Toplam batarya progress barda yüzdelik olarak gözükecek []
+Okunan batarya değerlerinde "belirtilen sıcaklık değerleri" geçerse uyarı verilecek
+	* pil için 3.5 V altında olursa belirli pile ait uyarıyı ver [] (arka plana kırmızı bir renk veya daha başka bir uyarı sistemi)
+	* batarya değeri düştükçe batarya progress barın renk değiştirmesi (0-30 kırmızı, 30-70 turuncu, 70-100 yeşil) []
+
+
+Future Feature
+İleride olursa okunan değerlerin grafikleri ekranda gosterilecek []
