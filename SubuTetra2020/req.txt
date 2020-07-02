@@ -1,4 +1,8 @@
-﻿Program 0.25sn'de bir veri okuması yapacak []
+﻿App Tasarımı
+	* Ayarlar Paneli Tasarımı []
+	* BMS Takip Paneli Tasarımı []
+	* Konsol Paneli Tasarımı []
+Program 0.25sn'de bir veri okuması yapacak []
 Anlık okunan değerlerin kaydedileceği bir log dosyası opsiyonu []
 	* verilerin kaydedileceği log dosyayı seçimi kullanıcıya bırakılacak []
 Genel ayarlar, veri görüntüleme farklı sayfalarda olmalı []
@@ -10,3 +14,4 @@ Okunan batarya değerlerinde "belirtilen sıcaklık değerleri" geçerse uyarı 
 
 Future Feature
 İleride olursa okunan değerlerin grafikleri ekranda gosterilecek []
+log kaydı düzenli halde bir excell dosyasında tutulacak []
