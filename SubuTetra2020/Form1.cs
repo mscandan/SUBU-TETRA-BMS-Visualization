@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO.Ports;
-using System.IO;
+using System.Windows.Forms;
 
 namespace SubuTetra2020
 {
@@ -33,15 +26,17 @@ namespace SubuTetra2020
 
         private void portBaglanButton_Click(object sender, EventArgs e)
         {
-            if(PortNamesComboBox.SelectedIndex < 0)
+            if (PortNamesComboBox.SelectedIndex < 0)
             {
                 baglantiKontrolLabel.ForeColor = Color.Red;
                 baglantiKontrolLabel.Text = "COM Portu bulunamadı";
-            } else if(baudrateTextBox.Text == "")
+            }
+            else if (baudrateTextBox.Text == "")
             {
                 baglantiKontrolLabel.ForeColor = Color.Red;
                 baglantiKontrolLabel.Text = "Baudrate değerini giriniz";
-            } else
+            }
+            else
             {
                 baglantiKontrolLabel.ForeColor = Color.Green;
                 baglantiKontrolLabel.Text = "Bağlantı Başarılı";
@@ -51,24 +46,22 @@ namespace SubuTetra2020
         private void logKaydiButon_Click(object sender, EventArgs e)
         {
             var filePath = new OpenFileDialog();
-            if(filePath.ShowDialog() == DialogResult.OK)
+            if (filePath.ShowDialog() == DialogResult.OK)
             {
                 logKaydiYolTextBox.Text = filePath.FileName;
             }
 
-            if(logKaydiCheckBox.Checked == true)
+            if (logKaydiCheckBox.Checked == true)
             {
                 // log kaydı tutulacak
-            } else
+            }
+            else
             {
                 // log kaydı tutulmadan devam edilecek
             }
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
         }
+
+        
     }
 }

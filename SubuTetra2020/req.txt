@@ -1,5 +1,5 @@
 ﻿App Tasarımı
-	* Ayarlar Paneli Tasarımı []
+	* Ayarlar Paneli Tasarımı [X]
 	* BMS Takip Paneli Tasarımı []
 	* Konsol Paneli Tasarımı []
 Program 0.25sn'de bir veri okuması yapacak []
