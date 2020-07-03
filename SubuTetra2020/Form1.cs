@@ -11,8 +11,10 @@ namespace SubuTetra2020
         {
             InitializeComponent();
             tabControl1.SelectTab("tabPage1");
+           
         }
 
+        // Bilgisayardan COM portlari alir ve gerekli yerde listeler
         private void PortlariListele()
         {
             string[] ports = SerialPort.GetPortNames();

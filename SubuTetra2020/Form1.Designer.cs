@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.logKaydiButon = new System.Windows.Forms.Button();
@@ -43,50 +44,60 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.sensor5sicaklik = new System.Windows.Forms.Label();
+            this.sensor4sicaklik = new System.Windows.Forms.Label();
+            this.sensor3sicaklik = new System.Windows.Forms.Label();
+            this.sensor2sicaklik = new System.Windows.Forms.Label();
+            this.sensor1sicaklik = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.maxSicaklikLabel = new System.Windows.Forms.Label();
+            this.vFarkLabel = new System.Windows.Forms.Label();
+            this.maxVLabel = new System.Windows.Forms.Label();
+            this.minVLabel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.genelVoltLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.genelWattLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.genelAmperLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.sarjProgress = new System.Windows.Forms.ProgressBar();
-            this.pil10c = new System.Windows.Forms.TextBox();
             this.pil10v = new System.Windows.Forms.TextBox();
-            this.pil9c = new System.Windows.Forms.TextBox();
             this.pil9v = new System.Windows.Forms.TextBox();
-            this.pil8c = new System.Windows.Forms.TextBox();
             this.pil8v = new System.Windows.Forms.TextBox();
-            this.pil7c = new System.Windows.Forms.TextBox();
             this.pil7v = new System.Windows.Forms.TextBox();
-            this.pil6c = new System.Windows.Forms.TextBox();
             this.pil6v = new System.Windows.Forms.TextBox();
-            this.pil5c = new System.Windows.Forms.TextBox();
             this.pil5v = new System.Windows.Forms.TextBox();
-            this.pil4c = new System.Windows.Forms.TextBox();
             this.pil4v = new System.Windows.Forms.TextBox();
-            this.pil3c = new System.Windows.Forms.TextBox();
             this.pil3v = new System.Windows.Forms.TextBox();
-            this.pil2c = new System.Windows.Forms.TextBox();
             this.pil2v = new System.Windows.Forms.TextBox();
-            this.pil20c = new System.Windows.Forms.TextBox();
             this.pil20v = new System.Windows.Forms.TextBox();
-            this.pil19c = new System.Windows.Forms.TextBox();
             this.pil19v = new System.Windows.Forms.TextBox();
-            this.pil18c = new System.Windows.Forms.TextBox();
             this.pil18v = new System.Windows.Forms.TextBox();
             this.pil15v = new System.Windows.Forms.TextBox();
-            this.pil14c = new System.Windows.Forms.TextBox();
             this.pil14v = new System.Windows.Forms.TextBox();
-            this.pil17c = new System.Windows.Forms.TextBox();
             this.pil17v = new System.Windows.Forms.TextBox();
-            this.pil16c = new System.Windows.Forms.TextBox();
             this.pil16v = new System.Windows.Forms.TextBox();
-            this.pil15c = new System.Windows.Forms.TextBox();
-            this.pil13c = new System.Windows.Forms.TextBox();
             this.pil13v = new System.Windows.Forms.TextBox();
             this.pil12v = new System.Windows.Forms.TextBox();
-            this.pil12c = new System.Windows.Forms.TextBox();
-            this.pil11c = new System.Windows.Forms.TextBox();
             this.pil11v = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.pil1c = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.pil1v = new System.Windows.Forms.TextBox();
             this.pil20label = new System.Windows.Forms.Label();
@@ -111,10 +122,15 @@
             this.pil1label = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataKonsol = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -274,50 +290,60 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.label20);
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Controls.Add(this.sensor5sicaklik);
+            this.tabPage2.Controls.Add(this.sensor4sicaklik);
+            this.tabPage2.Controls.Add(this.sensor3sicaklik);
+            this.tabPage2.Controls.Add(this.sensor2sicaklik);
+            this.tabPage2.Controls.Add(this.sensor1sicaklik);
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.maxSicaklikLabel);
+            this.tabPage2.Controls.Add(this.vFarkLabel);
+            this.tabPage2.Controls.Add(this.maxVLabel);
+            this.tabPage2.Controls.Add(this.minVLabel);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.genelVoltLabel);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.genelWattLabel);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.genelAmperLabel);
+            this.tabPage2.Controls.Add(this.pictureBox2);
+            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.sarjProgress);
-            this.tabPage2.Controls.Add(this.pil10c);
             this.tabPage2.Controls.Add(this.pil10v);
-            this.tabPage2.Controls.Add(this.pil9c);
             this.tabPage2.Controls.Add(this.pil9v);
-            this.tabPage2.Controls.Add(this.pil8c);
             this.tabPage2.Controls.Add(this.pil8v);
-            this.tabPage2.Controls.Add(this.pil7c);
             this.tabPage2.Controls.Add(this.pil7v);
-            this.tabPage2.Controls.Add(this.pil6c);
             this.tabPage2.Controls.Add(this.pil6v);
-            this.tabPage2.Controls.Add(this.pil5c);
             this.tabPage2.Controls.Add(this.pil5v);
-            this.tabPage2.Controls.Add(this.pil4c);
             this.tabPage2.Controls.Add(this.pil4v);
-            this.tabPage2.Controls.Add(this.pil3c);
             this.tabPage2.Controls.Add(this.pil3v);
-            this.tabPage2.Controls.Add(this.pil2c);
             this.tabPage2.Controls.Add(this.pil2v);
-            this.tabPage2.Controls.Add(this.pil20c);
             this.tabPage2.Controls.Add(this.pil20v);
-            this.tabPage2.Controls.Add(this.pil19c);
             this.tabPage2.Controls.Add(this.pil19v);
-            this.tabPage2.Controls.Add(this.pil18c);
             this.tabPage2.Controls.Add(this.pil18v);
             this.tabPage2.Controls.Add(this.pil15v);
-            this.tabPage2.Controls.Add(this.pil14c);
             this.tabPage2.Controls.Add(this.pil14v);
-            this.tabPage2.Controls.Add(this.pil17c);
             this.tabPage2.Controls.Add(this.pil17v);
-            this.tabPage2.Controls.Add(this.pil16c);
             this.tabPage2.Controls.Add(this.pil16v);
-            this.tabPage2.Controls.Add(this.pil15c);
-            this.tabPage2.Controls.Add(this.pil13c);
             this.tabPage2.Controls.Add(this.pil13v);
             this.tabPage2.Controls.Add(this.pil12v);
-            this.tabPage2.Controls.Add(this.pil12c);
-            this.tabPage2.Controls.Add(this.pil11c);
             this.tabPage2.Controls.Add(this.pil11v);
-            this.tabPage2.Controls.Add(this.label26);
             this.tabPage2.Controls.Add(this.label25);
-            this.tabPage2.Controls.Add(this.pil1c);
-            this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label24);
             this.tabPage2.Controls.Add(this.pil1v);
             this.tabPage2.Controls.Add(this.pil20label);
@@ -342,6 +368,7 @@
             this.tabPage2.Controls.Add(this.pil1label);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -349,14 +376,333 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "BMS Takip";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(542, 357);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(31, 25);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "°C";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(542, 287);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 25);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "°C";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(542, 216);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 25);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "°C";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(542, 133);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(31, 25);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "°C";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(542, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(31, 25);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "°C";
+            // 
+            // sensor5sicaklik
+            // 
+            this.sensor5sicaklik.AutoSize = true;
+            this.sensor5sicaklik.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.sensor5sicaklik.Location = new System.Drawing.Point(490, 357);
+            this.sensor5sicaklik.Name = "sensor5sicaklik";
+            this.sensor5sicaklik.Size = new System.Drawing.Size(46, 25);
+            this.sensor5sicaklik.TabIndex = 15;
+            this.sensor5sicaklik.Text = "33,4";
+            // 
+            // sensor4sicaklik
+            // 
+            this.sensor4sicaklik.AutoSize = true;
+            this.sensor4sicaklik.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.sensor4sicaklik.Location = new System.Drawing.Point(490, 287);
+            this.sensor4sicaklik.Name = "sensor4sicaklik";
+            this.sensor4sicaklik.Size = new System.Drawing.Size(46, 25);
+            this.sensor4sicaklik.TabIndex = 15;
+            this.sensor4sicaklik.Text = "33,4";
+            // 
+            // sensor3sicaklik
+            // 
+            this.sensor3sicaklik.AutoSize = true;
+            this.sensor3sicaklik.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.sensor3sicaklik.Location = new System.Drawing.Point(490, 216);
+            this.sensor3sicaklik.Name = "sensor3sicaklik";
+            this.sensor3sicaklik.Size = new System.Drawing.Size(46, 25);
+            this.sensor3sicaklik.TabIndex = 15;
+            this.sensor3sicaklik.Text = "33,4";
+            // 
+            // sensor2sicaklik
+            // 
+            this.sensor2sicaklik.AutoSize = true;
+            this.sensor2sicaklik.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.sensor2sicaklik.Location = new System.Drawing.Point(490, 133);
+            this.sensor2sicaklik.Name = "sensor2sicaklik";
+            this.sensor2sicaklik.Size = new System.Drawing.Size(46, 25);
+            this.sensor2sicaklik.TabIndex = 15;
+            this.sensor2sicaklik.Text = "33,4";
+            // 
+            // sensor1sicaklik
+            // 
+            this.sensor1sicaklik.AutoSize = true;
+            this.sensor1sicaklik.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.sensor1sicaklik.Location = new System.Drawing.Point(490, 51);
+            this.sensor1sicaklik.Name = "sensor1sicaklik";
+            this.sensor1sicaklik.Size = new System.Drawing.Size(46, 25);
+            this.sensor1sicaklik.TabIndex = 15;
+            this.sensor1sicaklik.Text = "33,4";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(348, 357);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(89, 25);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Sensor 5";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(348, 287);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 25);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "Sensor 4";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(348, 216);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 25);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Sensor 3";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(348, 133);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 25);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "Sensor 2";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(348, 51);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 25);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Sensor 1";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(1119, 451);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(31, 25);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "°C";
+            // 
+            // maxSicaklikLabel
+            // 
+            this.maxSicaklikLabel.AutoSize = true;
+            this.maxSicaklikLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.maxSicaklikLabel.Location = new System.Drawing.Point(1076, 451);
+            this.maxSicaklikLabel.Name = "maxSicaklikLabel";
+            this.maxSicaklikLabel.Size = new System.Drawing.Size(46, 25);
+            this.maxSicaklikLabel.TabIndex = 13;
+            this.maxSicaklikLabel.Text = "34,7";
+            // 
+            // vFarkLabel
+            // 
+            this.vFarkLabel.AutoSize = true;
+            this.vFarkLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.vFarkLabel.Location = new System.Drawing.Point(968, 451);
+            this.vFarkLabel.Name = "vFarkLabel";
+            this.vFarkLabel.Size = new System.Drawing.Size(46, 25);
+            this.vFarkLabel.TabIndex = 13;
+            this.vFarkLabel.Text = "0,13";
+            // 
+            // maxVLabel
+            // 
+            this.maxVLabel.AutoSize = true;
+            this.maxVLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.maxVLabel.Location = new System.Drawing.Point(846, 451);
+            this.maxVLabel.Name = "maxVLabel";
+            this.maxVLabel.Size = new System.Drawing.Size(46, 25);
+            this.maxVLabel.TabIndex = 13;
+            this.maxVLabel.Text = "3,68";
+            // 
+            // minVLabel
+            // 
+            this.minVLabel.AutoSize = true;
+            this.minVLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.minVLabel.Location = new System.Drawing.Point(723, 451);
+            this.minVLabel.Name = "minVLabel";
+            this.minVLabel.Size = new System.Drawing.Size(46, 25);
+            this.minVLabel.TabIndex = 13;
+            this.minVLabel.Text = "3,55";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(1075, 426);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 25);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Max °C";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(967, 426);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 25);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Fark";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(845, 426);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 25);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Max";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(723, 426);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 25);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Min";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(1047, 117);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 45);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Volt";
+            // 
+            // genelVoltLabel
+            // 
+            this.genelVoltLabel.AutoSize = true;
+            this.genelVoltLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genelVoltLabel.Location = new System.Drawing.Point(949, 113);
+            this.genelVoltLabel.Name = "genelVoltLabel";
+            this.genelVoltLabel.Size = new System.Drawing.Size(101, 45);
+            this.genelVoltLabel.TabIndex = 10;
+            this.genelVoltLabel.Text = "72,18";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(1035, 337);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 45);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Watt";
+            // 
+            // genelWattLabel
+            // 
+            this.genelWattLabel.AutoSize = true;
+            this.genelWattLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genelWattLabel.Location = new System.Drawing.Point(913, 337);
+            this.genelWattLabel.Name = "genelWattLabel";
+            this.genelWattLabel.Size = new System.Drawing.Size(101, 45);
+            this.genelWattLabel.TabIndex = 10;
+            this.genelWattLabel.Text = "375,2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(1035, 231);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 45);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Amper";
+            // 
+            // genelAmperLabel
+            // 
+            this.genelAmperLabel.AutoSize = true;
+            this.genelAmperLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genelAmperLabel.Location = new System.Drawing.Point(949, 231);
+            this.genelAmperLabel.Name = "genelAmperLabel";
+            this.genelAmperLabel.Size = new System.Drawing.Size(65, 45);
+            this.genelAmperLabel.TabIndex = 10;
+            this.genelAmperLabel.Text = "5,2";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(779, 323);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 75);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(779, 216);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 75);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(723, 51);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(766, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 25);
+            this.label4.Size = new System.Drawing.Size(126, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Sarj Durumu";
             // 
@@ -365,17 +711,10 @@
             this.sarjProgress.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.sarjProgress.Location = new System.Drawing.Point(723, 89);
             this.sarjProgress.Name = "sarjProgress";
-            this.sarjProgress.Size = new System.Drawing.Size(118, 187);
+            this.sarjProgress.Size = new System.Drawing.Size(200, 89);
+            this.sarjProgress.Step = 1;
             this.sarjProgress.TabIndex = 6;
-            // 
-            // pil10c
-            // 
-            this.pil10c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil10c.Location = new System.Drawing.Point(152, 426);
-            this.pil10c.Multiline = true;
-            this.pil10c.Name = "pil10c";
-            this.pil10c.Size = new System.Drawing.Size(68, 25);
-            this.pil10c.TabIndex = 3;
+            this.sarjProgress.Value = 72;
             // 
             // pil10v
             // 
@@ -386,15 +725,6 @@
             this.pil10v.Size = new System.Drawing.Size(68, 25);
             this.pil10v.TabIndex = 3;
             // 
-            // pil9c
-            // 
-            this.pil9c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil9c.Location = new System.Drawing.Point(152, 392);
-            this.pil9c.Multiline = true;
-            this.pil9c.Name = "pil9c";
-            this.pil9c.Size = new System.Drawing.Size(68, 25);
-            this.pil9c.TabIndex = 3;
-            // 
             // pil9v
             // 
             this.pil9v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -403,15 +733,6 @@
             this.pil9v.Name = "pil9v";
             this.pil9v.Size = new System.Drawing.Size(68, 25);
             this.pil9v.TabIndex = 3;
-            // 
-            // pil8c
-            // 
-            this.pil8c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil8c.Location = new System.Drawing.Point(152, 357);
-            this.pil8c.Multiline = true;
-            this.pil8c.Name = "pil8c";
-            this.pil8c.Size = new System.Drawing.Size(68, 25);
-            this.pil8c.TabIndex = 3;
             // 
             // pil8v
             // 
@@ -422,15 +743,6 @@
             this.pil8v.Size = new System.Drawing.Size(68, 25);
             this.pil8v.TabIndex = 3;
             // 
-            // pil7c
-            // 
-            this.pil7c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil7c.Location = new System.Drawing.Point(152, 323);
-            this.pil7c.Multiline = true;
-            this.pil7c.Name = "pil7c";
-            this.pil7c.Size = new System.Drawing.Size(68, 25);
-            this.pil7c.TabIndex = 3;
-            // 
             // pil7v
             // 
             this.pil7v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -439,15 +751,6 @@
             this.pil7v.Name = "pil7v";
             this.pil7v.Size = new System.Drawing.Size(68, 25);
             this.pil7v.TabIndex = 3;
-            // 
-            // pil6c
-            // 
-            this.pil6c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil6c.Location = new System.Drawing.Point(152, 287);
-            this.pil6c.Multiline = true;
-            this.pil6c.Name = "pil6c";
-            this.pil6c.Size = new System.Drawing.Size(68, 25);
-            this.pil6c.TabIndex = 3;
             // 
             // pil6v
             // 
@@ -458,15 +761,6 @@
             this.pil6v.Size = new System.Drawing.Size(68, 25);
             this.pil6v.TabIndex = 3;
             // 
-            // pil5c
-            // 
-            this.pil5c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil5c.Location = new System.Drawing.Point(152, 251);
-            this.pil5c.Multiline = true;
-            this.pil5c.Name = "pil5c";
-            this.pil5c.Size = new System.Drawing.Size(68, 25);
-            this.pil5c.TabIndex = 3;
-            // 
             // pil5v
             // 
             this.pil5v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -475,15 +769,6 @@
             this.pil5v.Name = "pil5v";
             this.pil5v.Size = new System.Drawing.Size(68, 25);
             this.pil5v.TabIndex = 3;
-            // 
-            // pil4c
-            // 
-            this.pil4c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil4c.Location = new System.Drawing.Point(152, 216);
-            this.pil4c.Multiline = true;
-            this.pil4c.Name = "pil4c";
-            this.pil4c.Size = new System.Drawing.Size(68, 25);
-            this.pil4c.TabIndex = 3;
             // 
             // pil4v
             // 
@@ -494,15 +779,6 @@
             this.pil4v.Size = new System.Drawing.Size(68, 25);
             this.pil4v.TabIndex = 3;
             // 
-            // pil3c
-            // 
-            this.pil3c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil3c.Location = new System.Drawing.Point(152, 175);
-            this.pil3c.Multiline = true;
-            this.pil3c.Name = "pil3c";
-            this.pil3c.Size = new System.Drawing.Size(68, 25);
-            this.pil3c.TabIndex = 3;
-            // 
             // pil3v
             // 
             this.pil3v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -511,15 +787,6 @@
             this.pil3v.Name = "pil3v";
             this.pil3v.Size = new System.Drawing.Size(68, 25);
             this.pil3v.TabIndex = 3;
-            // 
-            // pil2c
-            // 
-            this.pil2c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil2c.Location = new System.Drawing.Point(152, 133);
-            this.pil2c.Multiline = true;
-            this.pil2c.Name = "pil2c";
-            this.pil2c.Size = new System.Drawing.Size(68, 25);
-            this.pil2c.TabIndex = 3;
             // 
             // pil2v
             // 
@@ -530,55 +797,28 @@
             this.pil2v.Size = new System.Drawing.Size(68, 25);
             this.pil2v.TabIndex = 3;
             // 
-            // pil20c
-            // 
-            this.pil20c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil20c.Location = new System.Drawing.Point(427, 426);
-            this.pil20c.Multiline = true;
-            this.pil20c.Name = "pil20c";
-            this.pil20c.Size = new System.Drawing.Size(68, 25);
-            this.pil20c.TabIndex = 3;
-            // 
             // pil20v
             // 
             this.pil20v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil20v.Location = new System.Drawing.Point(343, 426);
+            this.pil20v.Location = new System.Drawing.Point(225, 426);
             this.pil20v.Multiline = true;
             this.pil20v.Name = "pil20v";
             this.pil20v.Size = new System.Drawing.Size(68, 25);
             this.pil20v.TabIndex = 3;
             // 
-            // pil19c
-            // 
-            this.pil19c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil19c.Location = new System.Drawing.Point(427, 392);
-            this.pil19c.Multiline = true;
-            this.pil19c.Name = "pil19c";
-            this.pil19c.Size = new System.Drawing.Size(68, 25);
-            this.pil19c.TabIndex = 3;
-            // 
             // pil19v
             // 
             this.pil19v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil19v.Location = new System.Drawing.Point(343, 392);
+            this.pil19v.Location = new System.Drawing.Point(225, 392);
             this.pil19v.Multiline = true;
             this.pil19v.Name = "pil19v";
             this.pil19v.Size = new System.Drawing.Size(68, 25);
             this.pil19v.TabIndex = 3;
             // 
-            // pil18c
-            // 
-            this.pil18c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil18c.Location = new System.Drawing.Point(427, 357);
-            this.pil18c.Multiline = true;
-            this.pil18c.Name = "pil18c";
-            this.pil18c.Size = new System.Drawing.Size(68, 25);
-            this.pil18c.TabIndex = 3;
-            // 
             // pil18v
             // 
             this.pil18v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil18v.Location = new System.Drawing.Point(343, 357);
+            this.pil18v.Location = new System.Drawing.Point(225, 357);
             this.pil18v.Multiline = true;
             this.pil18v.Name = "pil18v";
             this.pil18v.Size = new System.Drawing.Size(68, 25);
@@ -587,88 +827,43 @@
             // pil15v
             // 
             this.pil15v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil15v.Location = new System.Drawing.Point(343, 251);
+            this.pil15v.Location = new System.Drawing.Point(225, 251);
             this.pil15v.Multiline = true;
             this.pil15v.Name = "pil15v";
             this.pil15v.Size = new System.Drawing.Size(68, 25);
             this.pil15v.TabIndex = 3;
             // 
-            // pil14c
-            // 
-            this.pil14c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil14c.Location = new System.Drawing.Point(427, 216);
-            this.pil14c.Multiline = true;
-            this.pil14c.Name = "pil14c";
-            this.pil14c.Size = new System.Drawing.Size(68, 25);
-            this.pil14c.TabIndex = 3;
-            // 
             // pil14v
             // 
             this.pil14v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil14v.Location = new System.Drawing.Point(343, 216);
+            this.pil14v.Location = new System.Drawing.Point(225, 216);
             this.pil14v.Multiline = true;
             this.pil14v.Name = "pil14v";
             this.pil14v.Size = new System.Drawing.Size(68, 25);
             this.pil14v.TabIndex = 3;
             // 
-            // pil17c
-            // 
-            this.pil17c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil17c.Location = new System.Drawing.Point(427, 323);
-            this.pil17c.Multiline = true;
-            this.pil17c.Name = "pil17c";
-            this.pil17c.Size = new System.Drawing.Size(68, 25);
-            this.pil17c.TabIndex = 3;
-            // 
             // pil17v
             // 
             this.pil17v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil17v.Location = new System.Drawing.Point(343, 323);
+            this.pil17v.Location = new System.Drawing.Point(225, 323);
             this.pil17v.Multiline = true;
             this.pil17v.Name = "pil17v";
             this.pil17v.Size = new System.Drawing.Size(68, 25);
             this.pil17v.TabIndex = 3;
             // 
-            // pil16c
-            // 
-            this.pil16c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil16c.Location = new System.Drawing.Point(427, 287);
-            this.pil16c.Multiline = true;
-            this.pil16c.Name = "pil16c";
-            this.pil16c.Size = new System.Drawing.Size(68, 25);
-            this.pil16c.TabIndex = 3;
-            // 
             // pil16v
             // 
             this.pil16v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil16v.Location = new System.Drawing.Point(343, 287);
+            this.pil16v.Location = new System.Drawing.Point(225, 287);
             this.pil16v.Multiline = true;
             this.pil16v.Name = "pil16v";
             this.pil16v.Size = new System.Drawing.Size(68, 25);
             this.pil16v.TabIndex = 3;
             // 
-            // pil15c
-            // 
-            this.pil15c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil15c.Location = new System.Drawing.Point(427, 251);
-            this.pil15c.Multiline = true;
-            this.pil15c.Name = "pil15c";
-            this.pil15c.Size = new System.Drawing.Size(68, 25);
-            this.pil15c.TabIndex = 3;
-            // 
-            // pil13c
-            // 
-            this.pil13c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil13c.Location = new System.Drawing.Point(427, 175);
-            this.pil13c.Multiline = true;
-            this.pil13c.Name = "pil13c";
-            this.pil13c.Size = new System.Drawing.Size(68, 25);
-            this.pil13c.TabIndex = 3;
-            // 
             // pil13v
             // 
             this.pil13v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil13v.Location = new System.Drawing.Point(343, 175);
+            this.pil13v.Location = new System.Drawing.Point(225, 175);
             this.pil13v.Multiline = true;
             this.pil13v.Name = "pil13v";
             this.pil13v.Size = new System.Drawing.Size(68, 25);
@@ -677,77 +872,30 @@
             // pil12v
             // 
             this.pil12v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil12v.Location = new System.Drawing.Point(343, 133);
+            this.pil12v.Location = new System.Drawing.Point(225, 133);
             this.pil12v.Multiline = true;
             this.pil12v.Name = "pil12v";
             this.pil12v.Size = new System.Drawing.Size(68, 25);
             this.pil12v.TabIndex = 3;
             // 
-            // pil12c
-            // 
-            this.pil12c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil12c.Location = new System.Drawing.Point(427, 133);
-            this.pil12c.Multiline = true;
-            this.pil12c.Name = "pil12c";
-            this.pil12c.Size = new System.Drawing.Size(68, 25);
-            this.pil12c.TabIndex = 3;
-            // 
-            // pil11c
-            // 
-            this.pil11c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil11c.Location = new System.Drawing.Point(427, 89);
-            this.pil11c.Multiline = true;
-            this.pil11c.Name = "pil11c";
-            this.pil11c.Size = new System.Drawing.Size(68, 25);
-            this.pil11c.TabIndex = 3;
-            // 
             // pil11v
             // 
             this.pil11v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil11v.Location = new System.Drawing.Point(343, 89);
+            this.pil11v.Location = new System.Drawing.Point(225, 89);
             this.pil11v.Multiline = true;
             this.pil11v.Name = "pil11v";
             this.pil11v.Size = new System.Drawing.Size(68, 25);
             this.pil11v.TabIndex = 3;
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(444, 51);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(31, 25);
-            this.label26.TabIndex = 5;
-            this.label26.Text = "°C";
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(365, 51);
+            this.label25.Location = new System.Drawing.Point(247, 51);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(24, 25);
             this.label25.TabIndex = 4;
             this.label25.Text = "V";
-            // 
-            // pil1c
-            // 
-            this.pil1c.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil1c.Location = new System.Drawing.Point(152, 89);
-            this.pil1c.Multiline = true;
-            this.pil1c.Name = "pil1c";
-            this.pil1c.Size = new System.Drawing.Size(68, 25);
-            this.pil1c.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(169, 51);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "°C";
             // 
             // label24
             // 
@@ -772,7 +920,7 @@
             // 
             this.pil20label.AutoSize = true;
             this.pil20label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil20label.Location = new System.Drawing.Point(296, 426);
+            this.pil20label.Location = new System.Drawing.Point(185, 426);
             this.pil20label.Name = "pil20label";
             this.pil20label.Size = new System.Drawing.Size(34, 25);
             this.pil20label.TabIndex = 2;
@@ -782,7 +930,7 @@
             // 
             this.pil19label.AutoSize = true;
             this.pil19label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil19label.Location = new System.Drawing.Point(296, 392);
+            this.pil19label.Location = new System.Drawing.Point(185, 392);
             this.pil19label.Name = "pil19label";
             this.pil19label.Size = new System.Drawing.Size(34, 25);
             this.pil19label.TabIndex = 2;
@@ -792,7 +940,7 @@
             // 
             this.pil18label.AutoSize = true;
             this.pil18label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil18label.Location = new System.Drawing.Point(296, 357);
+            this.pil18label.Location = new System.Drawing.Point(185, 357);
             this.pil18label.Name = "pil18label";
             this.pil18label.Size = new System.Drawing.Size(34, 25);
             this.pil18label.TabIndex = 2;
@@ -802,7 +950,7 @@
             // 
             this.pil17label.AutoSize = true;
             this.pil17label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil17label.Location = new System.Drawing.Point(296, 323);
+            this.pil17label.Location = new System.Drawing.Point(185, 323);
             this.pil17label.Name = "pil17label";
             this.pil17label.Size = new System.Drawing.Size(34, 25);
             this.pil17label.TabIndex = 2;
@@ -812,7 +960,7 @@
             // 
             this.pil16label.AutoSize = true;
             this.pil16label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil16label.Location = new System.Drawing.Point(296, 287);
+            this.pil16label.Location = new System.Drawing.Point(185, 287);
             this.pil16label.Name = "pil16label";
             this.pil16label.Size = new System.Drawing.Size(34, 25);
             this.pil16label.TabIndex = 2;
@@ -822,7 +970,7 @@
             // 
             this.pil15label.AutoSize = true;
             this.pil15label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil15label.Location = new System.Drawing.Point(296, 251);
+            this.pil15label.Location = new System.Drawing.Point(185, 251);
             this.pil15label.Name = "pil15label";
             this.pil15label.Size = new System.Drawing.Size(34, 25);
             this.pil15label.TabIndex = 2;
@@ -832,7 +980,7 @@
             // 
             this.pil14label.AutoSize = true;
             this.pil14label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil14label.Location = new System.Drawing.Point(296, 216);
+            this.pil14label.Location = new System.Drawing.Point(185, 216);
             this.pil14label.Name = "pil14label";
             this.pil14label.Size = new System.Drawing.Size(34, 25);
             this.pil14label.TabIndex = 2;
@@ -842,7 +990,7 @@
             // 
             this.pil13label.AutoSize = true;
             this.pil13label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil13label.Location = new System.Drawing.Point(296, 175);
+            this.pil13label.Location = new System.Drawing.Point(185, 175);
             this.pil13label.Name = "pil13label";
             this.pil13label.Size = new System.Drawing.Size(34, 25);
             this.pil13label.TabIndex = 2;
@@ -852,7 +1000,7 @@
             // 
             this.pil12label.AutoSize = true;
             this.pil12label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil12label.Location = new System.Drawing.Point(296, 133);
+            this.pil12label.Location = new System.Drawing.Point(185, 133);
             this.pil12label.Name = "pil12label";
             this.pil12label.Size = new System.Drawing.Size(34, 25);
             this.pil12label.TabIndex = 2;
@@ -862,7 +1010,7 @@
             // 
             this.pil11label.AutoSize = true;
             this.pil11label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pil11label.Location = new System.Drawing.Point(296, 89);
+            this.pil11label.Location = new System.Drawing.Point(185, 89);
             this.pil11label.Name = "pil11label";
             this.pil11label.Size = new System.Drawing.Size(34, 25);
             this.pil11label.TabIndex = 2;
@@ -973,7 +1121,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(8, 8);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(619, 495);
+            this.groupBox3.Size = new System.Drawing.Size(315, 495);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Pil Gerilimleri";
@@ -983,18 +1131,38 @@
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.Location = new System.Drawing.Point(661, 8);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(587, 28);
+            this.groupBox4.Size = new System.Drawing.Size(587, 495);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sistem Durumu";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox5.Location = new System.Drawing.Point(336, 8);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(319, 409);
+            this.groupBox5.TabIndex = 16;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Sensor Sicakliklari";
+            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dataKonsol);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1256, 653);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Konsol";
+            // 
+            // dataKonsol
+            // 
+            this.dataKonsol.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataKonsol.Location = new System.Drawing.Point(0, 0);
+            this.dataKonsol.Multiline = true;
+            this.dataKonsol.Name = "dataKonsol";
+            this.dataKonsol.Size = new System.Drawing.Size(1256, 653);
+            this.dataKonsol.TabIndex = 17;
             // 
             // Form1
             // 
@@ -1010,6 +1178,10 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1056,51 +1228,63 @@
         private System.Windows.Forms.Label pil3label;
         private System.Windows.Forms.Label pil2label;
         private System.Windows.Forms.Label pil1label;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox pil11c;
         private System.Windows.Forms.TextBox pil11v;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox pil1c;
         private System.Windows.Forms.TextBox pil12v;
-        private System.Windows.Forms.TextBox pil12c;
-        private System.Windows.Forms.TextBox pil17c;
         private System.Windows.Forms.TextBox pil17v;
-        private System.Windows.Forms.TextBox pil16c;
         private System.Windows.Forms.TextBox pil16v;
-        private System.Windows.Forms.TextBox pil15c;
-        private System.Windows.Forms.TextBox pil13c;
         private System.Windows.Forms.TextBox pil13v;
-        private System.Windows.Forms.TextBox pil10c;
         private System.Windows.Forms.TextBox pil10v;
-        private System.Windows.Forms.TextBox pil9c;
         private System.Windows.Forms.TextBox pil9v;
-        private System.Windows.Forms.TextBox pil8c;
         private System.Windows.Forms.TextBox pil8v;
-        private System.Windows.Forms.TextBox pil7c;
         private System.Windows.Forms.TextBox pil7v;
-        private System.Windows.Forms.TextBox pil6c;
         private System.Windows.Forms.TextBox pil6v;
-        private System.Windows.Forms.TextBox pil5c;
         private System.Windows.Forms.TextBox pil5v;
-        private System.Windows.Forms.TextBox pil4c;
         private System.Windows.Forms.TextBox pil4v;
-        private System.Windows.Forms.TextBox pil3c;
         private System.Windows.Forms.TextBox pil3v;
-        private System.Windows.Forms.TextBox pil2c;
         private System.Windows.Forms.TextBox pil2v;
-        private System.Windows.Forms.TextBox pil20c;
         private System.Windows.Forms.TextBox pil20v;
-        private System.Windows.Forms.TextBox pil19c;
         private System.Windows.Forms.TextBox pil19v;
-        private System.Windows.Forms.TextBox pil18c;
         private System.Windows.Forms.TextBox pil18v;
         private System.Windows.Forms.TextBox pil15v;
-        private System.Windows.Forms.TextBox pil14c;
         private System.Windows.Forms.TextBox pil14v;
         private System.Windows.Forms.TextBox l;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ProgressBar sarjProgress;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label genelVoltLabel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label genelWattLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label genelAmperLabel;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label sensor5sicaklik;
+        private System.Windows.Forms.Label sensor4sicaklik;
+        private System.Windows.Forms.Label sensor3sicaklik;
+        private System.Windows.Forms.Label sensor2sicaklik;
+        private System.Windows.Forms.Label sensor1sicaklik;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label maxSicaklikLabel;
+        private System.Windows.Forms.Label vFarkLabel;
+        private System.Windows.Forms.Label maxVLabel;
+        private System.Windows.Forms.Label minVLabel;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox dataKonsol;
     }
 }
 
