@@ -10,8 +10,6 @@ namespace SubuTetra2020
         public Form1()
         {
             InitializeComponent();
-            tabControl1.SelectTab("tabPage1");
-           
         }
 
         // Bilgisayardan COM portlari alir ve gerekli yerde listeler
@@ -23,6 +21,7 @@ namespace SubuTetra2020
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            tabControl1.SelectTab("tabPage1");
             PortlariListele();
         }
 
@@ -64,6 +63,6 @@ namespace SubuTetra2020
 
         }
 
-        
+
     }
 }
