@@ -7,6 +7,9 @@ namespace SubuTetra2020
 {
     public partial class Form1 : Form
     {
+        /* Degisken tanimlamalari */
+        SerialPort port = new SerialPort();
+        /* Degisken tanimlamalari*/
         public Form1()
         {
             InitializeComponent();
@@ -17,6 +20,23 @@ namespace SubuTetra2020
         {
             string[] ports = SerialPort.GetPortNames();
             PortNamesComboBox.Items.AddRange(ports);
+        }
+        // SerialPort konfigurasyonu
+        private void SerialPortKonf()
+        {
+            port.PortName = PortNamesComboBox.SelectedItem.ToString();
+            port.BaudRate = Convert.ToInt32(baudrateTextBox.Text);
+            port.StopBits = StopBits.One;
+            port.Parity = Parity.None;
+            port.DataBits = 8; // okunacak verinin biti
+            port.Open();
+            // port.BytesToRead = 8; arastir 
+
+        }
+        // Veri okuma
+        private void VeriOku()
+        {
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,6 +61,8 @@ namespace SubuTetra2020
             {
                 baglantiKontrolLabel.ForeColor = Color.Green;
                 baglantiKontrolLabel.Text = "Bağlantı Başarılı";
+                SerialPortKonf();
+                baglantiKontrolLabel.Text = Convert.ToString(port.DataBits);
             }
         }
 
