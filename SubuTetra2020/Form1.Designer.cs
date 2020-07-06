@@ -1166,6 +1166,11 @@
             this.dataKonsol.Size = new System.Drawing.Size(1256, 653);
             this.dataKonsol.TabIndex = 17;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 250;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(1264, 681);

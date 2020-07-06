@@ -30,14 +30,17 @@ namespace SubuTetra2020
             port.Parity = Parity.None;
             port.DataBits = 8; // okunacak verinin biti
             port.Open();
-            // port.BytesToRead = 8; arastir 
+            // port.BytesToRead = 8; arastir
+            
 
         }
         // Veri okuma
-        private void VeriOku()
+        private void VeriOku(object sender, SerialDataReceivedEventArgs e)
         {
-            
+            dataKonsol.Text += port.ReadExisting();
+            dataKonsol.Text += Environment.NewLine;
         }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -61,8 +64,9 @@ namespace SubuTetra2020
             {
                 baglantiKontrolLabel.ForeColor = Color.Green;
                 baglantiKontrolLabel.Text = "Bağlantı Başarılı";
+                timer1.Enabled = true;
                 SerialPortKonf();
-                baglantiKontrolLabel.Text = Convert.ToString(port.DataBits);
+                
             }
         }
 
@@ -85,6 +89,9 @@ namespace SubuTetra2020
 
         }
 
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            port.DataReceived += new SerialDataReceivedEventHandler(VeriOku);
+        }
     }
 }
