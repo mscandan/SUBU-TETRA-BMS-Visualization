@@ -217,6 +217,7 @@
             this.baglantiKesButon.TabIndex = 2;
             this.baglantiKesButon.Text = "BAĞLANTIYI KES";
             this.baglantiKesButon.UseVisualStyleBackColor = true;
+            this.baglantiKesButon.Click += new System.EventHandler(this.baglantiKesButon_Click);
             // 
             // baudrateTextBox
             // 
@@ -1163,8 +1164,10 @@
             this.dataKonsol.Location = new System.Drawing.Point(0, 0);
             this.dataKonsol.Multiline = true;
             this.dataKonsol.Name = "dataKonsol";
+            this.dataKonsol.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataKonsol.Size = new System.Drawing.Size(1256, 653);
             this.dataKonsol.TabIndex = 17;
+            this.dataKonsol.TextChanged += new System.EventHandler(this.dataKonsol_TextChanged);
             // 
             // timer1
             // 

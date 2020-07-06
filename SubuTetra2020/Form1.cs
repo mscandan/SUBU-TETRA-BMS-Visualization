@@ -35,10 +35,26 @@ namespace SubuTetra2020
 
         }
         // Veri okuma
-        private void VeriOku(object sender, SerialDataReceivedEventArgs e)
+        private void VeriOku()
         {
-            dataKonsol.Text += port.ReadExisting();
-            dataKonsol.Text += Environment.NewLine;
+            string okunan = port.ReadExisting();
+            dataKonsol.Text += okunan;
+            dataKonsol.Text += Environment.NewLine;            
+            string[] ayrilmisVeriler = okunan.Split('|');
+            if(ayrilmisVeriler.Length >= 18)
+            {
+                pil1v.Text = ayrilmisVeriler[1];
+                pil2v.Text = ayrilmisVeriler[3];
+                pil3v.Text = ayrilmisVeriler[5];
+                pil4v.Text = ayrilmisVeriler[7];
+                pil5v.Text = ayrilmisVeriler[9];
+                sensor1sicaklik.Text = ayrilmisVeriler[11];
+                sensor2sicaklik.Text = ayrilmisVeriler[13];
+                sensor3sicaklik.Text = ayrilmisVeriler[15];
+                genelVoltLabel.Text = ayrilmisVeriler[17];
+            }
+            
+
         }
         
 
@@ -91,7 +107,20 @@ namespace SubuTetra2020
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            port.DataReceived += new SerialDataReceivedEventHandler(VeriOku);
+            VeriOku();
+        }
+
+        private void dataKonsol_TextChanged(object sender, EventArgs e)
+        {
+            dataKonsol.SelectionStart = dataKonsol.Text.Length;
+            dataKonsol.ScrollToCaret();
+            dataKonsol.Refresh();
+        }
+
+        private void baglantiKesButon_Click(object sender, EventArgs e)
+        {
+            port.Close();
+            timer1.Enabled = false;
         }
     }
 }
