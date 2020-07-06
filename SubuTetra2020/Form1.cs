@@ -177,11 +177,12 @@ namespace SubuTetra2020
                         genelAmperLabel.Text = kullanilacakVeri[1];
                     }
                 }
+                double toplamVolt = Convert.ToInt32(pil1v.Text) + Convert.ToInt32(pil2v.Text) + Convert.ToInt32(pil3v.Text) + Convert.ToInt32(pil4v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil6v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil8v.Text) + Convert.ToInt32(pil9v.Text) + Convert.ToInt32(pil10v.Text) + Convert.ToInt32(pil11v.Text) + Convert.ToInt32(pil12v.Text) + Convert.ToInt32(pil13v.Text) + Convert.ToInt32(pil14v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil16v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil18v.Text) + Convert.ToInt32(pil19v.Text) + Convert.ToInt32(pil20v.Text);
+                genelVoltLabel.Text = Convert.ToString(toplamVolt);
+                double genelAmper = Convert.ToInt32(genelAmperLabel.Text);
+                genelWattLabel.Text = Convert.ToString(toplamVolt * genelAmper);
             }
-            // int toplamVolt = Convert.ToInt32(pil1v.Text) + Convert.ToInt32(pil2v.Text) + Convert.ToInt32(pil3v.Text) + Convert.ToInt32(pil4v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil6v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil8v.Text) + Convert.ToInt32(pil9v.Text) + Convert.ToInt32(pil10v.Text) + Convert.ToInt32(pil11v.Text) + Convert.ToInt32(pil12v.Text) + Convert.ToInt32(pil13v.Text) + Convert.ToInt32(pil14v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil16v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil18v.Text) + Convert.ToInt32(pil19v.Text) + Convert.ToInt32(pil20v.Text);
-            // genelVoltLabel.Text = Convert.ToString(toplamVolt);
-            // int genelAmper = Convert.ToInt32(genelAmperLabel.Text);
-            // genelWattLabel.Text = Convert.ToString(toplamVolt * genelAmper);
+            
 
 
 
