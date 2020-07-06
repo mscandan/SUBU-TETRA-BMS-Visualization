@@ -51,127 +51,127 @@ namespace SubuTetra2020
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil1v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A2"))
+                    if (tamVeri.Contains("A2"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil2v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A3"))
+                    if (tamVeri.Contains("A3"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil3v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A4"))
+                    if (tamVeri.Contains("A4"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil4v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A5"))
+                    if (tamVeri.Contains("A5"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil5v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A6"))
+                    if (tamVeri.Contains("A6"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil6v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A7"))
+                    if (tamVeri.Contains("A7"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil7v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A8"))
+                    if (tamVeri.Contains("A8"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil8v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A9"))
+                    if (tamVeri.Contains("A9"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil9v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A10"))
+                    if (tamVeri.Contains("A10"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil10v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A11"))
+                    if (tamVeri.Contains("A11"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil11v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A12"))
+                    if (tamVeri.Contains("A12"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil12v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A13"))
+                    if (tamVeri.Contains("A13"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil13v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A14"))
+                    if (tamVeri.Contains("A14"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil14v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A15"))
+                    if (tamVeri.Contains("A15"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil15v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A16"))
+                    if (tamVeri.Contains("A16"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil16v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A17"))
+                    if (tamVeri.Contains("A17"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil17v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A18"))
+                    if (tamVeri.Contains("A18"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil18v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A19"))
+                    if (tamVeri.Contains("A19"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
-                        pil9v.Text = kullanilacakVeri[1];
+                        pil19v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("A20"))
+                    if (tamVeri.Contains("A20"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         pil20v.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("B1"))
+                    if (tamVeri.Contains("B1"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         sensor1sicaklik.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("B2"))
+                    if (tamVeri.Contains("B2"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         sensor2sicaklik.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("B3"))
+                    if (tamVeri.Contains("B3"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         sensor3sicaklik.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("B4"))
+                    if (tamVeri.Contains("B4"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         sensor4sicaklik.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("B5"))
+                    if (tamVeri.Contains("B5"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         sensor5sicaklik.Text = kullanilacakVeri[1];
                     }
-                    else if (tamVeri.Contains("C1"))
+                    if (tamVeri.Contains("C1"))
                     {
                         string[] kullanilacakVeri = tamVeri.Split('|');
                         genelAmperLabel.Text = kullanilacakVeri[1];
