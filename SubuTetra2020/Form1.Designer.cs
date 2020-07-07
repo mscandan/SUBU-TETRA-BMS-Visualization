@@ -45,6 +45,26 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pil1v = new System.Windows.Forms.Label();
+            this.pil20v = new System.Windows.Forms.Label();
+            this.pil19v = new System.Windows.Forms.Label();
+            this.pil18v = new System.Windows.Forms.Label();
+            this.pil17v = new System.Windows.Forms.Label();
+            this.pil16v = new System.Windows.Forms.Label();
+            this.pil15v = new System.Windows.Forms.Label();
+            this.pil14v = new System.Windows.Forms.Label();
+            this.pil13v = new System.Windows.Forms.Label();
+            this.pil12v = new System.Windows.Forms.Label();
+            this.pil11v = new System.Windows.Forms.Label();
+            this.pil10v = new System.Windows.Forms.Label();
+            this.pil9v = new System.Windows.Forms.Label();
+            this.pil8v = new System.Windows.Forms.Label();
+            this.pil7v = new System.Windows.Forms.Label();
+            this.pil6v = new System.Windows.Forms.Label();
+            this.pil5v = new System.Windows.Forms.Label();
+            this.pil4v = new System.Windows.Forms.Label();
+            this.pil3v = new System.Windows.Forms.Label();
+            this.pil2v = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -79,28 +99,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.sarjProgress = new System.Windows.Forms.ProgressBar();
-            this.pil10v = new System.Windows.Forms.TextBox();
-            this.pil9v = new System.Windows.Forms.TextBox();
-            this.pil8v = new System.Windows.Forms.TextBox();
-            this.pil7v = new System.Windows.Forms.TextBox();
-            this.pil6v = new System.Windows.Forms.TextBox();
-            this.pil5v = new System.Windows.Forms.TextBox();
-            this.pil4v = new System.Windows.Forms.TextBox();
-            this.pil3v = new System.Windows.Forms.TextBox();
-            this.pil2v = new System.Windows.Forms.TextBox();
-            this.pil20v = new System.Windows.Forms.TextBox();
-            this.pil19v = new System.Windows.Forms.TextBox();
-            this.pil18v = new System.Windows.Forms.TextBox();
-            this.pil15v = new System.Windows.Forms.TextBox();
-            this.pil14v = new System.Windows.Forms.TextBox();
-            this.pil17v = new System.Windows.Forms.TextBox();
-            this.pil16v = new System.Windows.Forms.TextBox();
-            this.pil13v = new System.Windows.Forms.TextBox();
-            this.pil12v = new System.Windows.Forms.TextBox();
-            this.pil11v = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.pil1v = new System.Windows.Forms.TextBox();
             this.pil20label = new System.Windows.Forms.Label();
             this.pil19label = new System.Windows.Forms.Label();
             this.pil18label = new System.Windows.Forms.Label();
@@ -293,6 +293,26 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.pil1v);
+            this.tabPage2.Controls.Add(this.pil20v);
+            this.tabPage2.Controls.Add(this.pil19v);
+            this.tabPage2.Controls.Add(this.pil18v);
+            this.tabPage2.Controls.Add(this.pil17v);
+            this.tabPage2.Controls.Add(this.pil16v);
+            this.tabPage2.Controls.Add(this.pil15v);
+            this.tabPage2.Controls.Add(this.pil14v);
+            this.tabPage2.Controls.Add(this.pil13v);
+            this.tabPage2.Controls.Add(this.pil12v);
+            this.tabPage2.Controls.Add(this.pil11v);
+            this.tabPage2.Controls.Add(this.pil10v);
+            this.tabPage2.Controls.Add(this.pil9v);
+            this.tabPage2.Controls.Add(this.pil8v);
+            this.tabPage2.Controls.Add(this.pil7v);
+            this.tabPage2.Controls.Add(this.pil6v);
+            this.tabPage2.Controls.Add(this.pil5v);
+            this.tabPage2.Controls.Add(this.pil4v);
+            this.tabPage2.Controls.Add(this.pil3v);
+            this.tabPage2.Controls.Add(this.pil2v);
             this.tabPage2.Controls.Add(this.label21);
             this.tabPage2.Controls.Add(this.label20);
             this.tabPage2.Controls.Add(this.label19);
@@ -327,28 +347,8 @@
             this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.sarjProgress);
-            this.tabPage2.Controls.Add(this.pil10v);
-            this.tabPage2.Controls.Add(this.pil9v);
-            this.tabPage2.Controls.Add(this.pil8v);
-            this.tabPage2.Controls.Add(this.pil7v);
-            this.tabPage2.Controls.Add(this.pil6v);
-            this.tabPage2.Controls.Add(this.pil5v);
-            this.tabPage2.Controls.Add(this.pil4v);
-            this.tabPage2.Controls.Add(this.pil3v);
-            this.tabPage2.Controls.Add(this.pil2v);
-            this.tabPage2.Controls.Add(this.pil20v);
-            this.tabPage2.Controls.Add(this.pil19v);
-            this.tabPage2.Controls.Add(this.pil18v);
-            this.tabPage2.Controls.Add(this.pil15v);
-            this.tabPage2.Controls.Add(this.pil14v);
-            this.tabPage2.Controls.Add(this.pil17v);
-            this.tabPage2.Controls.Add(this.pil16v);
-            this.tabPage2.Controls.Add(this.pil13v);
-            this.tabPage2.Controls.Add(this.pil12v);
-            this.tabPage2.Controls.Add(this.pil11v);
             this.tabPage2.Controls.Add(this.label25);
             this.tabPage2.Controls.Add(this.label24);
-            this.tabPage2.Controls.Add(this.pil1v);
             this.tabPage2.Controls.Add(this.pil20label);
             this.tabPage2.Controls.Add(this.pil19label);
             this.tabPage2.Controls.Add(this.pil18label);
@@ -378,6 +378,206 @@
             this.tabPage2.Size = new System.Drawing.Size(1256, 653);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "BMS Takip";
+            // 
+            // pil1v
+            // 
+            this.pil1v.AutoSize = true;
+            this.pil1v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil1v.Location = new System.Drawing.Point(90, 93);
+            this.pil1v.Name = "pil1v";
+            this.pil1v.Size = new System.Drawing.Size(19, 21);
+            this.pil1v.TabIndex = 17;
+            this.pil1v.Text = "0";
+            // 
+            // pil20v
+            // 
+            this.pil20v.AutoSize = true;
+            this.pil20v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil20v.Location = new System.Drawing.Point(247, 429);
+            this.pil20v.Name = "pil20v";
+            this.pil20v.Size = new System.Drawing.Size(19, 21);
+            this.pil20v.TabIndex = 17;
+            this.pil20v.Text = "0";
+            // 
+            // pil19v
+            // 
+            this.pil19v.AutoSize = true;
+            this.pil19v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil19v.Location = new System.Drawing.Point(247, 396);
+            this.pil19v.Name = "pil19v";
+            this.pil19v.Size = new System.Drawing.Size(19, 21);
+            this.pil19v.TabIndex = 17;
+            this.pil19v.Text = "0";
+            // 
+            // pil18v
+            // 
+            this.pil18v.AutoSize = true;
+            this.pil18v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil18v.Location = new System.Drawing.Point(247, 361);
+            this.pil18v.Name = "pil18v";
+            this.pil18v.Size = new System.Drawing.Size(19, 21);
+            this.pil18v.TabIndex = 17;
+            this.pil18v.Text = "0";
+            // 
+            // pil17v
+            // 
+            this.pil17v.AutoSize = true;
+            this.pil17v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil17v.Location = new System.Drawing.Point(247, 327);
+            this.pil17v.Name = "pil17v";
+            this.pil17v.Size = new System.Drawing.Size(19, 21);
+            this.pil17v.TabIndex = 17;
+            this.pil17v.Text = "0";
+            // 
+            // pil16v
+            // 
+            this.pil16v.AutoSize = true;
+            this.pil16v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil16v.Location = new System.Drawing.Point(247, 291);
+            this.pil16v.Name = "pil16v";
+            this.pil16v.Size = new System.Drawing.Size(19, 21);
+            this.pil16v.TabIndex = 17;
+            this.pil16v.Text = "0";
+            // 
+            // pil15v
+            // 
+            this.pil15v.AutoSize = true;
+            this.pil15v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil15v.Location = new System.Drawing.Point(247, 254);
+            this.pil15v.Name = "pil15v";
+            this.pil15v.Size = new System.Drawing.Size(19, 21);
+            this.pil15v.TabIndex = 17;
+            this.pil15v.Text = "0";
+            // 
+            // pil14v
+            // 
+            this.pil14v.AutoSize = true;
+            this.pil14v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil14v.Location = new System.Drawing.Point(247, 216);
+            this.pil14v.Name = "pil14v";
+            this.pil14v.Size = new System.Drawing.Size(19, 21);
+            this.pil14v.TabIndex = 17;
+            this.pil14v.Text = "0";
+            // 
+            // pil13v
+            // 
+            this.pil13v.AutoSize = true;
+            this.pil13v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil13v.Location = new System.Drawing.Point(247, 175);
+            this.pil13v.Name = "pil13v";
+            this.pil13v.Size = new System.Drawing.Size(19, 21);
+            this.pil13v.TabIndex = 17;
+            this.pil13v.Text = "0";
+            // 
+            // pil12v
+            // 
+            this.pil12v.AutoSize = true;
+            this.pil12v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil12v.Location = new System.Drawing.Point(247, 136);
+            this.pil12v.Name = "pil12v";
+            this.pil12v.Size = new System.Drawing.Size(19, 21);
+            this.pil12v.TabIndex = 17;
+            this.pil12v.Text = "0";
+            // 
+            // pil11v
+            // 
+            this.pil11v.AutoSize = true;
+            this.pil11v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil11v.Location = new System.Drawing.Point(247, 93);
+            this.pil11v.Name = "pil11v";
+            this.pil11v.Size = new System.Drawing.Size(19, 21);
+            this.pil11v.TabIndex = 17;
+            this.pil11v.Text = "0";
+            // 
+            // pil10v
+            // 
+            this.pil10v.AutoSize = true;
+            this.pil10v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil10v.Location = new System.Drawing.Point(90, 430);
+            this.pil10v.Name = "pil10v";
+            this.pil10v.Size = new System.Drawing.Size(19, 21);
+            this.pil10v.TabIndex = 17;
+            this.pil10v.Text = "0";
+            // 
+            // pil9v
+            // 
+            this.pil9v.AutoSize = true;
+            this.pil9v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil9v.Location = new System.Drawing.Point(90, 395);
+            this.pil9v.Name = "pil9v";
+            this.pil9v.Size = new System.Drawing.Size(19, 21);
+            this.pil9v.TabIndex = 17;
+            this.pil9v.Text = "0";
+            // 
+            // pil8v
+            // 
+            this.pil8v.AutoSize = true;
+            this.pil8v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil8v.Location = new System.Drawing.Point(90, 357);
+            this.pil8v.Name = "pil8v";
+            this.pil8v.Size = new System.Drawing.Size(19, 21);
+            this.pil8v.TabIndex = 17;
+            this.pil8v.Text = "0";
+            // 
+            // pil7v
+            // 
+            this.pil7v.AutoSize = true;
+            this.pil7v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil7v.Location = new System.Drawing.Point(90, 327);
+            this.pil7v.Name = "pil7v";
+            this.pil7v.Size = new System.Drawing.Size(19, 21);
+            this.pil7v.TabIndex = 17;
+            this.pil7v.Text = "0";
+            // 
+            // pil6v
+            // 
+            this.pil6v.AutoSize = true;
+            this.pil6v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil6v.Location = new System.Drawing.Point(90, 291);
+            this.pil6v.Name = "pil6v";
+            this.pil6v.Size = new System.Drawing.Size(19, 21);
+            this.pil6v.TabIndex = 17;
+            this.pil6v.Text = "0";
+            // 
+            // pil5v
+            // 
+            this.pil5v.AutoSize = true;
+            this.pil5v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil5v.Location = new System.Drawing.Point(90, 255);
+            this.pil5v.Name = "pil5v";
+            this.pil5v.Size = new System.Drawing.Size(19, 21);
+            this.pil5v.TabIndex = 17;
+            this.pil5v.Text = "0";
+            // 
+            // pil4v
+            // 
+            this.pil4v.AutoSize = true;
+            this.pil4v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil4v.Location = new System.Drawing.Point(90, 216);
+            this.pil4v.Name = "pil4v";
+            this.pil4v.Size = new System.Drawing.Size(19, 21);
+            this.pil4v.TabIndex = 17;
+            this.pil4v.Text = "0";
+            // 
+            // pil3v
+            // 
+            this.pil3v.AutoSize = true;
+            this.pil3v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil3v.Location = new System.Drawing.Point(90, 175);
+            this.pil3v.Name = "pil3v";
+            this.pil3v.Size = new System.Drawing.Size(19, 21);
+            this.pil3v.TabIndex = 17;
+            this.pil3v.Text = "0";
+            // 
+            // pil2v
+            // 
+            this.pil2v.AutoSize = true;
+            this.pil2v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.pil2v.Location = new System.Drawing.Point(90, 133);
+            this.pil2v.Name = "pil2v";
+            this.pil2v.Size = new System.Drawing.Size(19, 21);
+            this.pil2v.TabIndex = 17;
+            this.pil2v.Text = "0";
             // 
             // label21
             // 
@@ -719,177 +919,6 @@
             this.sarjProgress.TabIndex = 6;
             this.sarjProgress.Value = 72;
             // 
-            // pil10v
-            // 
-            this.pil10v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil10v.Location = new System.Drawing.Point(67, 426);
-            this.pil10v.Multiline = true;
-            this.pil10v.Name = "pil10v";
-            this.pil10v.Size = new System.Drawing.Size(68, 25);
-            this.pil10v.TabIndex = 3;
-            // 
-            // pil9v
-            // 
-            this.pil9v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil9v.Location = new System.Drawing.Point(67, 392);
-            this.pil9v.Multiline = true;
-            this.pil9v.Name = "pil9v";
-            this.pil9v.Size = new System.Drawing.Size(68, 25);
-            this.pil9v.TabIndex = 3;
-            // 
-            // pil8v
-            // 
-            this.pil8v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil8v.Location = new System.Drawing.Point(67, 357);
-            this.pil8v.Multiline = true;
-            this.pil8v.Name = "pil8v";
-            this.pil8v.Size = new System.Drawing.Size(68, 25);
-            this.pil8v.TabIndex = 3;
-            // 
-            // pil7v
-            // 
-            this.pil7v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil7v.Location = new System.Drawing.Point(67, 323);
-            this.pil7v.Multiline = true;
-            this.pil7v.Name = "pil7v";
-            this.pil7v.Size = new System.Drawing.Size(68, 25);
-            this.pil7v.TabIndex = 3;
-            // 
-            // pil6v
-            // 
-            this.pil6v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil6v.Location = new System.Drawing.Point(67, 287);
-            this.pil6v.Multiline = true;
-            this.pil6v.Name = "pil6v";
-            this.pil6v.Size = new System.Drawing.Size(68, 25);
-            this.pil6v.TabIndex = 3;
-            // 
-            // pil5v
-            // 
-            this.pil5v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil5v.Location = new System.Drawing.Point(67, 251);
-            this.pil5v.Multiline = true;
-            this.pil5v.Name = "pil5v";
-            this.pil5v.Size = new System.Drawing.Size(68, 25);
-            this.pil5v.TabIndex = 3;
-            // 
-            // pil4v
-            // 
-            this.pil4v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil4v.Location = new System.Drawing.Point(67, 216);
-            this.pil4v.Multiline = true;
-            this.pil4v.Name = "pil4v";
-            this.pil4v.Size = new System.Drawing.Size(68, 25);
-            this.pil4v.TabIndex = 3;
-            // 
-            // pil3v
-            // 
-            this.pil3v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil3v.Location = new System.Drawing.Point(67, 175);
-            this.pil3v.Multiline = true;
-            this.pil3v.Name = "pil3v";
-            this.pil3v.Size = new System.Drawing.Size(68, 25);
-            this.pil3v.TabIndex = 3;
-            // 
-            // pil2v
-            // 
-            this.pil2v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil2v.Location = new System.Drawing.Point(67, 133);
-            this.pil2v.Multiline = true;
-            this.pil2v.Name = "pil2v";
-            this.pil2v.Size = new System.Drawing.Size(68, 25);
-            this.pil2v.TabIndex = 3;
-            // 
-            // pil20v
-            // 
-            this.pil20v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil20v.Location = new System.Drawing.Point(225, 426);
-            this.pil20v.Multiline = true;
-            this.pil20v.Name = "pil20v";
-            this.pil20v.Size = new System.Drawing.Size(68, 25);
-            this.pil20v.TabIndex = 3;
-            // 
-            // pil19v
-            // 
-            this.pil19v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil19v.Location = new System.Drawing.Point(225, 392);
-            this.pil19v.Multiline = true;
-            this.pil19v.Name = "pil19v";
-            this.pil19v.Size = new System.Drawing.Size(68, 25);
-            this.pil19v.TabIndex = 3;
-            // 
-            // pil18v
-            // 
-            this.pil18v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil18v.Location = new System.Drawing.Point(225, 357);
-            this.pil18v.Multiline = true;
-            this.pil18v.Name = "pil18v";
-            this.pil18v.Size = new System.Drawing.Size(68, 25);
-            this.pil18v.TabIndex = 3;
-            // 
-            // pil15v
-            // 
-            this.pil15v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil15v.Location = new System.Drawing.Point(225, 251);
-            this.pil15v.Multiline = true;
-            this.pil15v.Name = "pil15v";
-            this.pil15v.Size = new System.Drawing.Size(68, 25);
-            this.pil15v.TabIndex = 3;
-            // 
-            // pil14v
-            // 
-            this.pil14v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil14v.Location = new System.Drawing.Point(225, 216);
-            this.pil14v.Multiline = true;
-            this.pil14v.Name = "pil14v";
-            this.pil14v.Size = new System.Drawing.Size(68, 25);
-            this.pil14v.TabIndex = 3;
-            // 
-            // pil17v
-            // 
-            this.pil17v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil17v.Location = new System.Drawing.Point(225, 323);
-            this.pil17v.Multiline = true;
-            this.pil17v.Name = "pil17v";
-            this.pil17v.Size = new System.Drawing.Size(68, 25);
-            this.pil17v.TabIndex = 3;
-            // 
-            // pil16v
-            // 
-            this.pil16v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil16v.Location = new System.Drawing.Point(225, 287);
-            this.pil16v.Multiline = true;
-            this.pil16v.Name = "pil16v";
-            this.pil16v.Size = new System.Drawing.Size(68, 25);
-            this.pil16v.TabIndex = 3;
-            // 
-            // pil13v
-            // 
-            this.pil13v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil13v.Location = new System.Drawing.Point(225, 175);
-            this.pil13v.Multiline = true;
-            this.pil13v.Name = "pil13v";
-            this.pil13v.Size = new System.Drawing.Size(68, 25);
-            this.pil13v.TabIndex = 3;
-            // 
-            // pil12v
-            // 
-            this.pil12v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil12v.Location = new System.Drawing.Point(225, 133);
-            this.pil12v.Multiline = true;
-            this.pil12v.Name = "pil12v";
-            this.pil12v.Size = new System.Drawing.Size(68, 25);
-            this.pil12v.TabIndex = 3;
-            // 
-            // pil11v
-            // 
-            this.pil11v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil11v.Location = new System.Drawing.Point(225, 89);
-            this.pil11v.Multiline = true;
-            this.pil11v.Name = "pil11v";
-            this.pil11v.Size = new System.Drawing.Size(68, 25);
-            this.pil11v.TabIndex = 3;
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -909,15 +938,6 @@
             this.label24.Size = new System.Drawing.Size(24, 25);
             this.label24.TabIndex = 4;
             this.label24.Text = "V";
-            // 
-            // pil1v
-            // 
-            this.pil1v.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pil1v.Location = new System.Drawing.Point(67, 89);
-            this.pil1v.Multiline = true;
-            this.pil1v.Name = "pil1v";
-            this.pil1v.Size = new System.Drawing.Size(68, 25);
-            this.pil1v.TabIndex = 3;
             // 
             // pil20label
             // 
@@ -1124,7 +1144,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(8, 8);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(315, 495);
+            this.groupBox3.Size = new System.Drawing.Size(315, 468);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Pil Gerilimleri";
@@ -1217,7 +1237,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox pil1v;
         private System.Windows.Forms.Label pil20label;
         private System.Windows.Forms.Label pil19label;
         private System.Windows.Forms.Label pil18label;
@@ -1238,27 +1257,8 @@
         private System.Windows.Forms.Label pil3label;
         private System.Windows.Forms.Label pil2label;
         private System.Windows.Forms.Label pil1label;
-        private System.Windows.Forms.TextBox pil11v;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox pil12v;
-        private System.Windows.Forms.TextBox pil17v;
-        private System.Windows.Forms.TextBox pil16v;
-        private System.Windows.Forms.TextBox pil13v;
-        private System.Windows.Forms.TextBox pil10v;
-        private System.Windows.Forms.TextBox pil9v;
-        private System.Windows.Forms.TextBox pil8v;
-        private System.Windows.Forms.TextBox pil7v;
-        private System.Windows.Forms.TextBox pil6v;
-        private System.Windows.Forms.TextBox pil5v;
-        private System.Windows.Forms.TextBox pil4v;
-        private System.Windows.Forms.TextBox pil3v;
-        private System.Windows.Forms.TextBox pil2v;
-        private System.Windows.Forms.TextBox pil20v;
-        private System.Windows.Forms.TextBox pil19v;
-        private System.Windows.Forms.TextBox pil18v;
-        private System.Windows.Forms.TextBox pil15v;
-        private System.Windows.Forms.TextBox pil14v;
-        private System.Windows.Forms.TextBox l;
+        
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ProgressBar sarjProgress;
         private System.Windows.Forms.Label label5;
@@ -1296,6 +1296,26 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox dataKonsol;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label pil20v;
+        private System.Windows.Forms.Label pil19v;
+        private System.Windows.Forms.Label pil18v;
+        private System.Windows.Forms.Label pil17v;
+        private System.Windows.Forms.Label pil16v;
+        private System.Windows.Forms.Label pil15v;
+        private System.Windows.Forms.Label pil14v;
+        private System.Windows.Forms.Label pil13v;
+        private System.Windows.Forms.Label pil12v;
+        private System.Windows.Forms.Label pil11v;
+        private System.Windows.Forms.Label pil10v;
+        private System.Windows.Forms.Label pil9v;
+        private System.Windows.Forms.Label pil8v;
+        private System.Windows.Forms.Label pil7v;
+        private System.Windows.Forms.Label pil6v;
+        private System.Windows.Forms.Label pil5v;
+        private System.Windows.Forms.Label pil4v;
+        private System.Windows.Forms.Label pil3v;
+        private System.Windows.Forms.Label pil2v;
+        private System.Windows.Forms.Label pil1v;
     }
 }
 
