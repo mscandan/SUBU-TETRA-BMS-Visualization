@@ -16,6 +16,7 @@ namespace SubuTetra2020
         public Form1()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
 
         // Bilgisayardan COM portlari alir ve gerekli yerde listeler
@@ -35,6 +36,7 @@ namespace SubuTetra2020
             port.Open();
             // port.BytesToRead = 8; arastir
         }
+        // Bu bir thread olacak
         private void Piller(string tamVeri)
         {
             if (tamVeri.Contains("A1"))
@@ -178,7 +180,7 @@ namespace SubuTetra2020
             }
             
         }
-        
+        // burası bir thread olacak
         private void Sicaklik(string tamVeri)
         {
             if (tamVeri.Contains("B1"))
@@ -212,6 +214,7 @@ namespace SubuTetra2020
                 genelAmperLabel.Text = kullanilacakVeri[1];
             }
         }
+        // burası bir thread olacak
         private void GenelHesap()
         {
             double toplamVolt = Convert.ToInt32(pil1v.Text) + Convert.ToInt32(pil2v.Text) + Convert.ToInt32(pil3v.Text) + Convert.ToInt32(pil4v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil6v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil8v.Text) + Convert.ToInt32(pil9v.Text) + Convert.ToInt32(pil10v.Text) + Convert.ToInt32(pil11v.Text) + Convert.ToInt32(pil12v.Text) + Convert.ToInt32(pil13v.Text) + Convert.ToInt32(pil14v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil16v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil18v.Text) + Convert.ToInt32(pil19v.Text) + Convert.ToInt32(pil20v.Text);
@@ -226,10 +229,13 @@ namespace SubuTetra2020
             string[] ayrilmisVeriler = okunan.Split(Environment.NewLine);
             if (ayrilmisVeriler.Length == 28)
             {
+
                 for (int i = 0; i < ayrilmisVeriler.Length; i++)
                 {
+                    
+                        Piller(ayrilmisVeriler[i]);
                    
-                    Piller(ayrilmisVeriler[i]);
+                    
                     
                     Sicaklik(ayrilmisVeriler[i]);
                 }
