@@ -226,7 +226,7 @@
             this.baudrateTextBox.Name = "baudrateTextBox";
             this.baudrateTextBox.Size = new System.Drawing.Size(140, 29);
             this.baudrateTextBox.TabIndex = 4;
-            this.baudrateTextBox.Text = "9600";
+            this.baudrateTextBox.Text = "115200";
             this.baudrateTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -855,9 +855,9 @@
             this.genelWattLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genelWattLabel.Location = new System.Drawing.Point(913, 337);
             this.genelWattLabel.Name = "genelWattLabel";
-            this.genelWattLabel.Size = new System.Drawing.Size(101, 45);
+            this.genelWattLabel.Size = new System.Drawing.Size(74, 45);
             this.genelWattLabel.TabIndex = 10;
-            this.genelWattLabel.Text = "375,2";
+            this.genelWattLabel.Text = "300";
             // 
             // label3
             // 
@@ -875,9 +875,9 @@
             this.genelAmperLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genelAmperLabel.Location = new System.Drawing.Point(949, 231);
             this.genelAmperLabel.Name = "genelAmperLabel";
-            this.genelAmperLabel.Size = new System.Drawing.Size(65, 45);
+            this.genelAmperLabel.Size = new System.Drawing.Size(38, 45);
             this.genelAmperLabel.TabIndex = 10;
-            this.genelAmperLabel.Text = "5,2";
+            this.genelAmperLabel.Text = "5";
             // 
             // pictureBox2
             // 

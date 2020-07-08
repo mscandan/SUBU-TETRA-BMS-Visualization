@@ -9,14 +9,13 @@ namespace SubuTetra2020
     {
         /* Degisken tanimlamalari */
         SerialPort port = new SerialPort();
-
+        double max, min, fark, maxSicaklik, genelVolt;
         /* Degisken tanimlamalari*/
         public Form1()
         {
             InitializeComponent();
             Control.CheckForIllegalCrossThreadCalls = false;
         }
-
         // Bilgisayardan COM portlari alir ve gerekli yerde listeler
         private void PortlariListele()
         {
@@ -30,186 +29,102 @@ namespace SubuTetra2020
             port.BaudRate = Convert.ToInt32(baudrateTextBox.Text);
             port.StopBits = StopBits.One;
             port.Parity = Parity.None;
-            // port.DataBits = 8; // okunacak verinin biti
+            port.DataBits = 8; // okunacak verinin biti
             port.Open();
             // port.BytesToRead = 8; arastir
         }
-        // Bu bir thread olacak
-        private void PillerBirOn(string tamVeri)
+        private double PilDegerHesabi(string veri)
         {
-            if (tamVeri.Contains("A1"))
+            if(veri.Contains('A') || veri.Contains('B') || veri.Contains('C'))
             {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil1v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A2"))
+                return 0;
+            } else
             {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil2v.Text = kullanilacakVeri[1];
+                double deger = Convert.ToDouble(veri);
+                deger = deger / 100.0;
+                genelVolt += deger;
+                return deger;
+                
             }
-            if (tamVeri.Contains("A3"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil3v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A4"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil4v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A5"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil5v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A6"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil6v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A7"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil7v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A8"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil8v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A9"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil9v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A10"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil10v.Text = kullanilacakVeri[1];
-            }
+            
         }
-        private void PillerOnbirYirmi(string tamVeri)
+        private double SicaklikDegerHesabi(string veri)
         {
-            if (tamVeri.Contains("A11"))
+            if (veri.Contains('A') || veri.Contains('B') || veri.Contains('C'))
             {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil11v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A12"))
+                return 0;
+            } else
             {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil12v.Text = kullanilacakVeri[1];
+                double deger = Convert.ToDouble(veri);
+                deger = deger / 10.0;
+                return deger;
+                
             }
-            if (tamVeri.Contains("A13"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil13v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A14"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil14v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A15"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil15v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A16"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil16v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A17"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil17v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A18"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil18v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A19"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil19v.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("A20"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                pil20v.Text = kullanilacakVeri[1];
-            }
-        }
-        // burası bir thread olacak
-        private void Sicaklik(string tamVeri)
-        {
-            if (tamVeri.Contains("B1"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                sensor1sicaklik.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("B2"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                sensor2sicaklik.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("B3"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                sensor3sicaklik.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("B4"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                sensor4sicaklik.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("B5"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                sensor5sicaklik.Text = kullanilacakVeri[1];
-            }
-            if (tamVeri.Contains("C1"))
-            {
-                string[] kullanilacakVeri = tamVeri.Split('|');
-                genelAmperLabel.Text = kullanilacakVeri[1];
-            }
-        }
-        // burası bir thread olacak
-        private void GenelHesap()
-        {
-            double toplamVolt = Convert.ToInt32(pil1v.Text) + Convert.ToInt32(pil2v.Text) + Convert.ToInt32(pil3v.Text) + Convert.ToInt32(pil4v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil6v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil8v.Text) + Convert.ToInt32(pil9v.Text) + Convert.ToInt32(pil10v.Text) + Convert.ToInt32(pil11v.Text) + Convert.ToInt32(pil12v.Text) + Convert.ToInt32(pil13v.Text) + Convert.ToInt32(pil14v.Text) + Convert.ToInt32(pil5v.Text) + Convert.ToInt32(pil16v.Text) + Convert.ToInt32(pil7v.Text) + Convert.ToInt32(pil18v.Text) + Convert.ToInt32(pil19v.Text) + Convert.ToInt32(pil20v.Text);
-            genelVoltLabel.Text = Convert.ToString(toplamVolt);
-            double genelAmper = Convert.ToInt32(genelAmperLabel.Text);
-            genelWattLabel.Text = Convert.ToString(toplamVolt * genelAmper);
+                
         }
         // Veri okuma
-        private void VeriOku()
+        private void VeriOku(string okunanVeri)
         {
-            string okunan = port.ReadExisting();
-            string[] ayrilmisVeriler = okunan.Split(Environment.NewLine);
-            if (ayrilmisVeriler.Length == 28)
+            string[] ayrilmisVeriler = okunanVeri.Split('|');
+            if (ayrilmisVeriler.Length == 53 && okunanVeri[okunanVeri.Length -1] == '|' && okunanVeri[0] == 'A' && okunanVeri[1] == '1')
             {
-                for (int i = 0; i < ayrilmisVeriler.Length; i++)
+                // okunan veriyi konsola loglama
+                dataKonsol.Text += okunanVeri;
+                dataKonsol.Text += Environment.NewLine;
+                // pil atamaları
+                pil1v.Text = PilDegerHesabi(ayrilmisVeriler[1]).ToString();
+                pil2v.Text = PilDegerHesabi(ayrilmisVeriler[3]).ToString();
+                pil3v.Text = PilDegerHesabi(ayrilmisVeriler[5]).ToString();
+                pil4v.Text = PilDegerHesabi(ayrilmisVeriler[7]).ToString();
+                pil5v.Text = PilDegerHesabi(ayrilmisVeriler[9]).ToString();
+                pil6v.Text = PilDegerHesabi(ayrilmisVeriler[11]).ToString();
+                pil7v.Text = PilDegerHesabi(ayrilmisVeriler[13]).ToString();
+                pil8v.Text = PilDegerHesabi(ayrilmisVeriler[15]).ToString();
+                pil9v.Text = PilDegerHesabi(ayrilmisVeriler[17]).ToString();
+                pil10v.Text = PilDegerHesabi(ayrilmisVeriler[19]).ToString();
+                pil11v.Text = PilDegerHesabi(ayrilmisVeriler[21]).ToString();
+                pil12v.Text = PilDegerHesabi(ayrilmisVeriler[23]).ToString();
+                pil13v.Text = PilDegerHesabi(ayrilmisVeriler[25]).ToString();
+                pil14v.Text = PilDegerHesabi(ayrilmisVeriler[27]).ToString();
+                pil15v.Text = PilDegerHesabi(ayrilmisVeriler[29]).ToString();
+                pil16v.Text = PilDegerHesabi(ayrilmisVeriler[31]).ToString();
+                pil17v.Text = PilDegerHesabi(ayrilmisVeriler[33]).ToString();
+                pil18v.Text = PilDegerHesabi(ayrilmisVeriler[35]).ToString();
+                pil19v.Text = PilDegerHesabi(ayrilmisVeriler[37]).ToString();
+                pil20v.Text = PilDegerHesabi(ayrilmisVeriler[39]).ToString();
+                // sıcaklık atamaları
+                sensor1sicaklik.Text = SicaklikDegerHesabi(ayrilmisVeriler[41]).ToString();
+                sensor2sicaklik.Text = SicaklikDegerHesabi(ayrilmisVeriler[43]).ToString();
+                sensor3sicaklik.Text = SicaklikDegerHesabi(ayrilmisVeriler[45]).ToString();
+                sensor4sicaklik.Text = SicaklikDegerHesabi(ayrilmisVeriler[47]).ToString();
+                sensor5sicaklik.Text = SicaklikDegerHesabi(ayrilmisVeriler[49]).ToString();
+                // amper ataması
+                genelAmperLabel.Text = ayrilmisVeriler[51];
+
+                if(genelVolt.ToString().Length > 5)
                 {
-                    // thread 1 -> pil 1 - pil 10 arası kontrol ve atama
-                    PillerBirOn(ayrilmisVeriler[i]);
-                    // thread 2 -> pil 11 - pil 20 arası kontrol ve atama
-                    PillerOnbirYirmi(ayrilmisVeriler[i]);
-                    // thread3 -> sıcaklık sensörleri ve amper kontrol ve atama
-                    Sicaklik(ayrilmisVeriler[i]);
+                    genelVoltLabel.Text = genelVolt.ToString().Substring(0, 5);
+                } else
+                {
+                    genelVoltLabel.Text = genelVolt.ToString();
                 }
-                // thread 4 -> genel hesaplamalar ve atamalar
-                GenelHesap();
+                // watt hesabı
+                double genelWatt = genelVolt * Convert.ToDouble(genelAmperLabel.Text);
+                if(genelWatt.ToString().Length > 5)
+                {
+                    genelWattLabel.Text = genelWatt.ToString().Substring(0,5);
+                } else
+                {
+                    genelWattLabel.Text = genelWatt.ToString();
+                }
             }
-            dataKonsol.Text += okunan;
+            
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.SelectTab("tabPage1");
             PortlariListele();
         }
-
         private void portBaglanButton_Click(object sender, EventArgs e)
         {
             if (PortNamesComboBox.SelectedIndex < 0)
@@ -230,7 +145,6 @@ namespace SubuTetra2020
                 SerialPortKonf();
             }
         }
-
         private void logKaydiButon_Click(object sender, EventArgs e)
         {
             var filePath = new OpenFileDialog();
@@ -249,25 +163,22 @@ namespace SubuTetra2020
             }
 
         }
-
-
-
         private void dataKonsol_TextChanged(object sender, EventArgs e)
         {
             dataKonsol.SelectionStart = dataKonsol.Text.Length;
             dataKonsol.ScrollToCaret();
-            dataKonsol.Refresh();
+            // dataKonsol.Refresh();
         }
-
         private void baglantiKesButon_Click(object sender, EventArgs e)
         {
             port.Close();
             timer1.Enabled = false;
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
-            VeriOku();
+            string okunan = port.ReadExisting();
+            VeriOku(okunan);
+            genelVolt = 0;
         }
     }
 }

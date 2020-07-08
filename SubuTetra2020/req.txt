@@ -10,10 +10,11 @@ Toplam batarya progress barda yüzdelik olarak gözükecek []
 Okunan batarya değerlerinde "belirtilen sıcaklık değerleri" geçerse uyarı verilecek
 	* pil için 3.5 V altında olursa belirli pile ait uyarıyı ver [] (arka plana kırmızı bir renk veya daha başka bir uyarı sistemi)
 	* batarya değeri düştükçe batarya progress barın renk değiştirmesi (0-30 kırmızı, 30-70 turuncu, 70-100 yeşil) []
+	* volt değeri 84 -> progress bar 100 | volt değeri 60 -> progress bar 0
 
 Tüm gerekli işlemler için koşulları yaz []
-	* 20 pil []
-	* 5 sıcaklık sensörü []
+	* 20 pil [X]
+	* 5 sıcaklık sensörü [X]
 	* tüm pillerin gerilimini topla ve genelVolt'a yazdır []
 
 
