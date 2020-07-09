@@ -823,7 +823,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(1047, 117);
+            this.label5.Location = new System.Drawing.Point(1071, 117);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 45);
             this.label5.TabIndex = 11;
@@ -843,7 +843,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(1035, 337);
+            this.label6.Location = new System.Drawing.Point(1059, 337);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 45);
             this.label6.TabIndex = 11;
@@ -863,7 +863,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1035, 231);
+            this.label3.Location = new System.Drawing.Point(1039, 235);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 45);
             this.label3.TabIndex = 11;
@@ -911,13 +911,13 @@
             // 
             // sarjProgress
             // 
-            this.sarjProgress.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sarjProgress.BackColor = System.Drawing.SystemColors.Control;
+            this.sarjProgress.ForeColor = System.Drawing.SystemColors.MenuText;
             this.sarjProgress.Location = new System.Drawing.Point(723, 89);
             this.sarjProgress.Name = "sarjProgress";
             this.sarjProgress.Size = new System.Drawing.Size(200, 89);
             this.sarjProgress.Step = 1;
             this.sarjProgress.TabIndex = 6;
-            this.sarjProgress.Value = 72;
             // 
             // label25
             // 
@@ -1154,7 +1154,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.Location = new System.Drawing.Point(661, 8);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(587, 495);
+            this.groupBox4.Size = new System.Drawing.Size(587, 499);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sistem Durumu";

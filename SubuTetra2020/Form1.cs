@@ -62,6 +62,63 @@ namespace SubuTetra2020
             }
                 
         }
+        // Max sıcaklık, min-max gerilim hesabı
+        private void GenelHesap(string [] ayrilmisVeriler)
+        {
+            max = Convert.ToDouble(ayrilmisVeriler[1]); // ilk veriyi max seçtik
+            min = Convert.ToDouble(ayrilmisVeriler[1]); // ilk veriyi min seçtik
+            for(int i = 3; i < 40; i = i + 2)
+            {
+                if(Convert.ToDouble(ayrilmisVeriler[i]) > max)
+                {
+                    max = Convert.ToDouble(ayrilmisVeriler[i]);
+                }
+                if(Convert.ToDouble(ayrilmisVeriler[i]) < min)
+                {
+                    min = Convert.ToDouble(ayrilmisVeriler[i]);
+                }
+            }
+            minVLabel.Text = (min / 100.0).ToString();
+            maxVLabel.Text = (max / 100.0).ToString();
+            vFarkLabel.Text = ((max - min) / 100.0).ToString();
+            // sıcaklık
+            maxSicaklik = Convert.ToDouble(ayrilmisVeriler[41]);
+            for(int i = 43; i < 50; i = i + 2)
+            {
+                if(Convert.ToDouble(ayrilmisVeriler[i]) > maxSicaklik)
+                {
+                    maxSicaklik = Convert.ToDouble(ayrilmisVeriler[i]);
+                }
+            }
+            maxSicaklikLabel.Text = (maxSicaklik / 10.0).ToString();
+        }
+        // progress bar hesabı
+        private void ProgressBarHesabi(double toplamGerilim)
+        {
+            // max gerilim 80 - min gerilim 60
+            if(Convert.ToInt32(toplamGerilim) > 60)
+            {
+                int yuzde = (Convert.ToInt32(toplamGerilim) - 60) * 5;
+                sarjProgress.Value = yuzde;
+                if (sarjProgress.Value > 0 && sarjProgress.Value < 30)
+                {
+                    sarjProgress.ForeColor = Color.Red;
+                }
+                if (sarjProgress.Value > 30 && sarjProgress.Value < 70)
+                {
+                    sarjProgress.ForeColor = Color.Orange;
+                }
+                if(sarjProgress.Value > 70 && sarjProgress.Value <= 100)
+                {
+                    sarjProgress.ForeColor = Color.Green;
+                }
+            }
+            else
+            {
+                sarjProgress.Value = 0;
+            }
+            
+        }
         // Veri okuma
         private void VeriOku(string okunanVeri)
         {
@@ -117,12 +174,16 @@ namespace SubuTetra2020
                 {
                     genelWattLabel.Text = genelWatt.ToString();
                 }
+                GenelHesap(ayrilmisVeriler);
+                ProgressBarHesabi(genelVolt);
             }
             
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.SelectTab("tabPage1");
+            sarjProgress.Style = ProgressBarStyle.Continuous;
+
             PortlariListele();
         }
         private void portBaglanButton_Click(object sender, EventArgs e)
