@@ -3,19 +3,19 @@
 	* BMS Takip Paneli Tasarımı [X]
 	* Konsol Paneli Tasarımı [X]
 Program 0.25sn'de bir veri okuması yapacak [X]
-Anlık okunan değerlerin kaydedileceği bir log dosyası opsiyonu []
-	* verilerin kaydedileceği log dosyayı seçimi kullanıcıya bırakılacak []
+Anlık okunan değerlerin kaydedileceği bir log dosyası opsiyonu [X]
+	* verilerin kaydedileceği log dosyayı seçimi kullanıcıya bırakılacak [X]
 Genel ayarlar, veri görüntüleme farklı sayfalarda olmalı [X]
-Toplam batarya progress barda yüzdelik olarak gözükecek []
+Toplam batarya progress barda yüzdelik olarak gözükecek [X]
 Okunan batarya değerlerinde "belirtilen sıcaklık değerleri" geçerse uyarı verilecek
 	* pil için 3.5 V altında olursa belirli pile ait uyarıyı ver [] (arka plana kırmızı bir renk veya daha başka bir uyarı sistemi)
-	* batarya değeri düştükçe batarya progress barın renk değiştirmesi (0-30 kırmızı, 30-70 turuncu, 70-100 yeşil) []
-	* volt değeri 84 -> progress bar 100 | volt değeri 60 -> progress bar 0
+	* batarya değeri düştükçe batarya progress barın renk değiştirmesi (0-30 kırmızı, 30-70 turuncu, 70-100 yeşil) [X]
+	* volt değeri 84 -> progress bar 100 | volt değeri 60 -> progress bar 0 [X]
 
-Tüm gerekli işlemler için koşulları yaz []
+Tüm gerekli işlemler için koşulları yaz [X]
 	* 20 pil [X]
 	* 5 sıcaklık sensörü [X]
-	* tüm pillerin gerilimini topla ve genelVolt'a yazdır []
+	* tüm pillerin gerilimini topla ve genelVolt'a yazdır [X]
 
 
 *STM
@@ -27,4 +27,4 @@ Tüm gerekli işlemler için koşulları yaz []
 
 Future Feature
 İleride olursa okunan değerlerin grafikleri ekranda gosterilecek []
-log kaydı düzenli halde bir excell dosyasında tutulacak []
+log kaydı düzenli halde bir excell dosyasında tutulacak [X]
