@@ -51,7 +51,6 @@ namespace SubuTetra2020
             {
                 double deger = Convert.ToDouble(veri);
                 deger = deger / 100.0;
-                
                 return deger;
             }
         }
@@ -171,14 +170,17 @@ namespace SubuTetra2020
             string[] ayrilmisVeriler = okunanVeri.Split('|');
             if (ayrilmisVeriler.Length == 53 && okunanVeri[okunanVeri.Length -1] == '|' && okunanVeri[0] == 'A' && okunanVeri[1] == '1')
             {
-                satirCount++;
                 // okunan veriyi konsola loglama
                 dataKonsol.Text += DateTime.Now;
                 dataKonsol.Text += " - ";
                 dataKonsol.Text += okunanVeri;
                 dataKonsol.Text += Environment.NewLine;
                 // okunan veriyi seçilen excell dosyasına loglama
-                DosyaLog(ayrilmisVeriler, satirCount);
+                if(logKaydiCheckBox.Checked == true)
+                {
+                    satirCount++;
+                    DosyaLog(ayrilmisVeriler, satirCount);
+                }
                 // pil atamaları
                 pil1v.Text = PilDegerHesabi(ayrilmisVeriler[1]).ToString();
                 pil2v.Text = PilDegerHesabi(ayrilmisVeriler[3]).ToString();
@@ -276,11 +278,16 @@ namespace SubuTetra2020
         }
         private void baglantiKesButon_Click(object sender, EventArgs e)
         {
+            baglantiKontrolLabel.Text = "Bağlantı Kapalı";
+            baglantiKontrolLabel.ForeColor = Color.Red;
             port.Close();
             timer1.Enabled = false;
-            Stream stream = dosyaYolu.OpenFile();
-            package.SaveAs(stream);
-            stream.Close();
+            if(logKaydiCheckBox.Checked == true)
+            {
+                Stream stream = dosyaYolu.OpenFile();
+                package.SaveAs(stream);
+                stream.Close();
+            }
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
